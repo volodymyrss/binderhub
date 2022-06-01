@@ -181,7 +181,7 @@ class Build:
         """Get options/flags for repo2docker"""
         r2d_options = [
             f"--ref={self.ref}",
-            f"--image={self.image_name}",
+            f"--image-name={self.image_name}",
             "--no-clean",
             "--no-run",
             "--json-logs",
