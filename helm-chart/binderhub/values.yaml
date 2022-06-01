@@ -16,8 +16,8 @@ rbac:
 nodeSelector: {}
 
 image:
-  name: jupyterhub/k8s-binderhub
-  tag: "0.2.0-n956.h64a6ec4"
+  name: volodymyrsavchenko/binderhub-k8s-binderhub
+  tag: "0.2.0-n963.hf2206f6"
 
 # registry here is only used to create docker config.json
 registry:

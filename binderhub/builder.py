@@ -338,6 +338,8 @@ class BuildHandler(BaseHandler):
 
         image_prefix = self.settings["image_prefix"]
 
+        image_prefix = "volodymyrsavchenko/cscs-binderhub-"
+
         # Enforces max 255 characters before image
         safe_build_slug = _safe_build_slug(
             provider.get_build_slug(), limit=255 - len(image_prefix)
