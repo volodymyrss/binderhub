@@ -17,7 +17,7 @@ nodeSelector: {}
 
 image:
   name: volodymyrsavchenko/binderhub-k8s-binderhub
-  tag: "0.2.0-n963.hf2206f6"
+  tag: "0.2.0-n964.h13b659e"
 
 # registry here is only used to create docker config.json
 registry:
@@ -194,7 +194,7 @@ jupyterhub:
     # start notebook server with lab ui as default
     # *if available*
     cmd:
-      - python3
+      - python
       - "-c"
       - |
         import os

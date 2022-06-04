@@ -113,6 +113,10 @@ class RepoProvider(LoggingConfigurable):
         """
         Return true if the given spec has been banned
         """
+
+        if not re.match('https://renkulab.io/gitlab.*', self.spec):
+            return True
+
         for banned in self.banned_specs:
             # Ignore case, because most git providers do not
             # count DS-100/textbook as different from ds-100/textbook

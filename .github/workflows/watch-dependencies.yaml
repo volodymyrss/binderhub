@@ -52,7 +52,7 @@ jobs:
         id: latest
         # The skopeo image helps us list tags consistently from different docker
         # registries. We use jq to filter out tags of the x.y or x.y.z format
-        # with the optional v prefix or version_startswith filter, and then sort
+        # with the optional v prefix or version_startswith filter, and< then sort
         # based on the numerical x, y, and z values. Finally, we pick the last
         # value in the list.
         #
